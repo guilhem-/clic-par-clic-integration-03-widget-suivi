@@ -1,0 +1,17 @@
+# Série Intégrations (module int03) : publie aussi l'état signé d'une demande (/s/…, lu par le widget
+# de suivi depuis le navigateur). Routes servies par integrations.py ; appliqué avec k8s-echelle.yaml
+# par « node services/studio3d/deployer.mjs --echelle ». Absent du dépôt du module s3d02.
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: studio-integrations
+  namespace: studio3d
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: studio.localhost
+      http:
+        paths:
+          - path: /s/
+            pathType: Prefix
+            backend: { service: { name: studio, port: { number: 8000 } } }
