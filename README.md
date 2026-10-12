@@ -119,7 +119,8 @@ curl -s -o /dev/null -w "%{http_code}" http://studio.localhost:8080/s/1/<autre s
 
 - Module précédent : **Prévenir l'utilisateur quand son rendu est prêt** —
   [clic-par-clic-integration-02-notifications](https://github.com/guilhem-/clic-par-clic-integration-02-notifications).
-- Module suivant : **Le studio comme un modèle : une fonction Pipe**.
+- Module suivant : **Le studio comme un modèle : une fonction Pipe** —
+  [clic-par-clic-integration-04-fonction-pipe](https://github.com/guilhem-/clic-par-clic-integration-04-fonction-pipe).
 - Construire le studio : série « Créer un service d'IA compatible agentique : le studio 3D »
   (dépôts `clic-par-clic-studio3d-01` à `06`).
 
